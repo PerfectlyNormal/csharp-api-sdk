@@ -30,7 +30,7 @@ namespace FortnoxAPILibrary
         /// </summary>
         public string RequestXml { get; set; }
         /// <summary>
-        /// The data returned from Fortnox in Xml-format. 
+        /// The data returned from Fortnox in Xml-format.
         /// </summary>
         public string ResponseXml { get; set; }
 
@@ -78,7 +78,7 @@ namespace FortnoxAPILibrary
         }
 
         /// <summary>
-        /// This method is used to setup the WebRequest used in every call to Fortnox. 
+        /// This method is used to setup the WebRequest used in every call to Fortnox.
         /// </summary>
         /// <param name="requestUriString">The url to the resource</param>
         /// <param name="method">
@@ -371,6 +371,9 @@ namespace FortnoxAPILibrary
         {
             if (we.Response == null)
             {
+                if(we.Status == WebExceptionStatus.Timeout)
+                    throw new TimeoutException("Inget svar från Fortnox API. Kontrollera inre exception.", we);
+
                 throw new Exception("Inget svar från Fortnox API. Kontrollera inre exception.", we);
             }
             using (HttpWebResponse response = (HttpWebResponse)we.Response)
