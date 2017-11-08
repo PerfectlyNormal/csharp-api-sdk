@@ -24,8 +24,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class TermsOfDeliveries
-	{
+	public partial class TermsOfDeliveries : ISearchResult
+    {
 
 		private List<TermsOfDeliverySubset> termsOfDeliverySubsetField;
 

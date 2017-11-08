@@ -50,7 +50,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of supplier invoice file Connections
 		/// </summary>
 		/// <returns></returns>
-		public SupplierInvoiceFileConnections Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

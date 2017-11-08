@@ -165,7 +165,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets at list of supplier invoices
 		/// </summary>
 		/// <returns>A list of supplier invoices</returns>
-		public SupplierInvoices Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

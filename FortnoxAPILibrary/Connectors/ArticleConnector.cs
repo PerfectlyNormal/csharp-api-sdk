@@ -120,7 +120,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of articles
 		/// </summary>
 		/// <returns>A list of articles</returns>
-		public Articles Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

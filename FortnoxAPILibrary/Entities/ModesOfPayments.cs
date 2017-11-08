@@ -24,8 +24,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class ModesOfPayments
-	{
+	public partial class ModesOfPayments : ISearchResult
+    {
 
 		private List<ModeOfPaymentSubset> modeOfPaymentSubsetField;
 

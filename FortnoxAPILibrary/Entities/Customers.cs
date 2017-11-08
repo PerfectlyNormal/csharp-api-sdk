@@ -23,7 +23,7 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class Customers
+	public partial class Customers : ISearchResult
 	{
 
 		private List<CustomerSubset> customerSubsetField;

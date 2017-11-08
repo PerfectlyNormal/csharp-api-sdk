@@ -98,7 +98,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of suppliers
 		/// </summary>
 		/// <returns>A list of suppliers</returns>
-		public Suppliers Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

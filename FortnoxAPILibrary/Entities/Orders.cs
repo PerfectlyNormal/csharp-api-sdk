@@ -25,8 +25,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class Orders
-	{
+	public partial class Orders : ISearchResult
+    {
 
 		private List<OrderSubset> orderSubsetField;
 

@@ -6,7 +6,7 @@ using System.Text;
 namespace FortnoxAPILibrary.Connectors
 {
     /// <remarks/>
-    public abstract class FinancialYearBasedEntityConnector<E, C, S> : EntityConnector<E, C, S>
+    public abstract class FinancialYearBasedEntityConnector<E, C, S> : EntityConnector<E, C, S> where C : IDummyInterface
     {
         private string financialYearDateValue;
         private bool financialYearDateSet = false;
@@ -48,6 +48,15 @@ namespace FortnoxAPILibrary.Connectors
                 this.financialYearIDValue = value;
                 this.financialYearIDSet = true;
             }
+        }
+
+        /// <summary>
+        /// Find() is not implemented here
+        /// </summary>
+        /// <returns></returns>
+        public override IDummyInterface Find()
+        {
+            throw new NotImplementedException("This connector does not support Find");
         }
     }
 }

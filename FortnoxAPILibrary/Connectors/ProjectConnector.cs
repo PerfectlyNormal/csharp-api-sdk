@@ -82,7 +82,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets at list of project, use the properties of ProjectConnector to limit the search
 		/// </summary>
 		/// <returns>A list of projects</returns>
-		public Projects Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

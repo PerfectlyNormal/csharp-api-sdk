@@ -55,7 +55,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of cost centers
 		/// </summary>
 		/// <returns>A list of cost centers</returns>
-		public CostCenters Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

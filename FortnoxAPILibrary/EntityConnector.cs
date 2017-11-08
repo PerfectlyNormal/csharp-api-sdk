@@ -8,7 +8,7 @@ using System.Web;
 namespace FortnoxAPILibrary
 {
     /// <remarks/>
-    public abstract class EntityConnector<E, C, S> : UrlRequestBase
+    public abstract class EntityConnector<E, C, S> : UrlRequestBase, IEntityConnector where C : IDummyInterface
     {
         /// <remarks/>
         public EntityConnector()
@@ -86,6 +86,8 @@ namespace FortnoxAPILibrary
         /// Use with Find() to limit the search result
         /// </summary>
         public int Offset { get; set; }
+
+        public abstract IDummyInterface Find();
 
         /// <remarks/>
         protected Dictionary<string, string> Parameters = new Dictionary<string, string>();

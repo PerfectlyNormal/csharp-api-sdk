@@ -24,8 +24,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class AccountCharts
-	{
+	public partial class AccountCharts : IDummyInterface
+    {
 
 		private List<AccountChartSubset> accountChartSubsetField;
 

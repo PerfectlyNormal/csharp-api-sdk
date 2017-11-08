@@ -95,7 +95,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets at list of accounts
 		/// </summary>
 		/// <returns>A list of accounts</returns>
-		public Accounts Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

@@ -88,7 +88,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of prices. Use the properties of PriceConnector to limit the result.
 		/// </summary>
 		/// <returns>A list of prices</returns>
-		public Prices Find()
+		public override IDummyInterface Find()
 		{
 			base.Resource = "prices/sublist/";
 

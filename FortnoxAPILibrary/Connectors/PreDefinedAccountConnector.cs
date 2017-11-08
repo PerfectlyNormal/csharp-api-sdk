@@ -34,7 +34,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of predefined accounts
 		/// </summary>
 		/// <returns>A list of predefined accounts</returns>
-		public PreDefinedAccounts Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

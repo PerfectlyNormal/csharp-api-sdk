@@ -54,7 +54,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets at list of currencies
 		/// </summary>
 		/// <returns>A list of currencies</returns>
-		public Currencies Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

@@ -26,8 +26,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class Currencies
-	{
+	public partial class Currencies : IDummyInterface
+    {
 
 		private List<CurrencySubset> currencySubsetField;
 

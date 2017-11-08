@@ -7,7 +7,7 @@ using System.Text;
 namespace FortnoxAPILibrary
 {
     /// <remarks />
-    public class CompanySettings
+    public class CompanySettings : IDummyInterface
     {
         /// <remarks />
         [ReadOnly(true)]

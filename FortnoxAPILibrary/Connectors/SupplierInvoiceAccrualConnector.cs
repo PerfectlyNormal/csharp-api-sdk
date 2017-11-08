@@ -72,7 +72,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of supplier invoice accruals
 		/// </summary>
 		/// <returns>A list of supplier invoice accruals</returns>
-		public SupplierInvoiceAccruals Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

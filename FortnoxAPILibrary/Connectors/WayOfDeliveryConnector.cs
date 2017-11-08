@@ -61,7 +61,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of way of deliveries
 		/// </summary>
 		/// <returns>A list of way of deliveries</returns>
-		public WayOfDeliveries Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

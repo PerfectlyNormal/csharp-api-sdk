@@ -181,7 +181,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of customers
 		/// </summary>
 		/// <returns>A list of customers</returns>
-		public Customers Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

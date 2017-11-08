@@ -63,7 +63,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of payments
 		/// </summary>
 		/// <returns>A list of payments</returns>
-		public InvoicePayments Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

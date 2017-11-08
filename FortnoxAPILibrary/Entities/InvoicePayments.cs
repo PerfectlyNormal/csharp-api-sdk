@@ -24,8 +24,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class InvoicePayments
-	{
+	public partial class InvoicePayments : ISearchResult
+    {
 
 		private List<InvoicePaymentSubset> invoicePaymentSubsetField;
 

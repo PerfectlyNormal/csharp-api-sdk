@@ -83,7 +83,7 @@ namespace FortnoxAPILibrary.Connectors
         /// Gets a list of vouchers
         /// </summary>
         /// <returns>A list of vouchers</returns>
-        public Vouchers Find()
+        public override IDummyInterface Find()
         {
             base.Resource += "/sublist/";
 

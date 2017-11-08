@@ -54,7 +54,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of Modes of payment
 		/// </summary>
 		/// <returns></returns>
-		public ModesOfPayments Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

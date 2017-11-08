@@ -6,7 +6,7 @@ using System.Text;
 namespace FortnoxAPILibrary
 {
     /// <remarks/>
-    public class SupplierInvoiceURLConnection
+    public class SupplierInvoiceURLConnection : IDummyInterface
     {
         /// <summary>This field is Read-Only in Fortnox</summary>
         [System.ComponentModel.ReadOnly(true)]

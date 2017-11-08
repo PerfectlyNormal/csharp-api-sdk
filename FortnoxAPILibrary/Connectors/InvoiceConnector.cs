@@ -207,7 +207,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets at list of Invoices
 		/// </summary>
 		/// <returns>A list of invoices</returns>
-		public Invoices Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

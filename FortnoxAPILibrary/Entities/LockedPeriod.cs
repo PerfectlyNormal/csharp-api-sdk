@@ -7,7 +7,7 @@ using System.Text;
 namespace FortnoxAPILibrary
 {
     /// <remarks/>
-    public class LockedPeriod
+    public class LockedPeriod : IDummyInterface
     {
         /// <remarks/>
         [ReadOnly(true)]

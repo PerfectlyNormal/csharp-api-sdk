@@ -62,7 +62,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of terms of deliveries
 		/// </summary>
 		/// <returns>A list of terms of deliveries</returns>
-		public TermsOfDeliveries Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

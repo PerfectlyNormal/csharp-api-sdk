@@ -57,11 +57,11 @@ namespace FortnoxAPILibrary.Connectors
 			base.BaseDelete(termsOfPaymentCode);
 		}
 
-		/// <summary>
-		/// Gets a list of terms of payments
-		/// </summary>
-		/// <returns>A list of terms of payments</returns>
-		public TermsOfPayments Find()
+        /// <summary>
+        /// Gets a list of terms of payments
+        /// </summary>
+        /// <returns>A list of terms of payments</returns>
+        public override IDummyInterface Find()
         {
 			return base.BaseFind();
 		}

@@ -37,5 +37,10 @@ namespace FortnoxAPILibrary.Connectors
         {
             base.BaseDelete(id);
         }
+
+        public override IDummyInterface Find()
+        {
+            throw new NotImplementedException("This connector does not support Find");
+        }
     }
 }

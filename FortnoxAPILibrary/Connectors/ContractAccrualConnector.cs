@@ -57,7 +57,7 @@ namespace FortnoxAPILibrary.Connectors
         /// Gets a list of contract accruals
         /// </summary>
         /// <returns>A list of contract accruals</returns>
-        public ContractAccruals Find()
+        public override IDummyInterface Find()
         {
             return base.BaseFind();
         }

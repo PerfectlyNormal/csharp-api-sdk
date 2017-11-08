@@ -15,7 +15,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of print templates
 		/// </summary>
 		/// <returns>A list of print templates</returns>
-		public PrintTemplates Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

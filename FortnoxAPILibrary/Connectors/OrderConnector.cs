@@ -183,7 +183,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of orders
 		/// </summary>
 		/// <returns>A list of orders</returns>
-		public Orders Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

@@ -106,7 +106,7 @@ namespace FortnoxAPILibrary.Connectors
         /// Gets at list of Contracts
         /// </summary>
         /// <returns>A list of Contracts</returns>
-        public Contracts Find()
+        public override IDummyInterface Find()
         {
             return base.BaseFind();
         }

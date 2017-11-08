@@ -57,11 +57,11 @@ namespace FortnoxAPILibrary.Connectors
 			base.BaseDelete(fileId);
 		}
 
-		/// <summary>
-		/// Gets a list of VoucherFile Connections
-		/// </summary>
-		/// <returns></returns>
-		public VoucherFileConnections Find()
+        /// <summary>
+        /// Gets a list of VoucherFile Connections
+        /// </summary>
+        /// <returns></returns>
+        public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

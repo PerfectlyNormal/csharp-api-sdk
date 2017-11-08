@@ -41,7 +41,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of financial years
 		/// </summary>
 		/// <returns>A list of financial years</returns>
-		public FinancialYears Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

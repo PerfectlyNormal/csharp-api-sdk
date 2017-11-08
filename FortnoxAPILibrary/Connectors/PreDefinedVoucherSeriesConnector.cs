@@ -65,7 +65,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of pre defined voucher series
 		/// </summary>
 		/// <returns></returns>
-		public PreDefinedVoucherSeriesCollection Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

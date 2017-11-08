@@ -54,7 +54,7 @@ namespace FortnoxAPILibrary.Connectors {
         /// Gets a list of labels
         /// </summary>
         /// <returns>A list of labels</returns>
-        public Labels Find() {
+        public override IDummyInterface Find() {
             return base.BaseFind();
         }
     }

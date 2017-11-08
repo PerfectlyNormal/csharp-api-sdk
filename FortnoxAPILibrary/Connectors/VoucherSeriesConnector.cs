@@ -49,7 +49,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of voucher series
 		/// </summary>
 		/// <returns>A list of voucher series</returns>
-		public VoucherSeriesCollection Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

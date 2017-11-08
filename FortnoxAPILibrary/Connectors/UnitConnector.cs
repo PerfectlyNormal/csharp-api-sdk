@@ -54,7 +54,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of units
 		/// </summary>
 		/// <returns>A list of units</returns>
-		public Units Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

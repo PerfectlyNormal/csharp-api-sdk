@@ -23,7 +23,8 @@ namespace FortnoxAPILibrary {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-    public partial class Labels {
+    public partial class Labels : ISearchResult
+    {
 
         private List<LabelSubset> labelSubsetField;
 

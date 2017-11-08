@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace FortnoxAPILibrary
 {
     /// <remarks/>
-    public class ContractAccruals
+    public class ContractAccruals : IDummyInterface
     {
         /// <remarks/>
         public List<ContractAccrualSubSet> ContractAccrualSubset { get; set; }

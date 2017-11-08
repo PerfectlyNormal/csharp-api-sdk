@@ -24,8 +24,8 @@ namespace FortnoxAPILibrary
 	[System.ComponentModel.DesignerCategoryAttribute("code")]
 	[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 	[System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
-	public partial class VoucherFileConnections
-	{
+	public partial class VoucherFileConnections : ISearchResult
+    {
 
 		private List<VoucherFileConnectionSubset> voucherFileConnectionSubsetField;
 

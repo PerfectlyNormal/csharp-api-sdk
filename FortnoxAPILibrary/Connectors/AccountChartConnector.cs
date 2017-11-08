@@ -14,7 +14,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of account charts 
 		/// </summary>
 		/// <returns>A list of account charts</returns>
-		public AccountCharts Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace FortnoxAPILibrary
 {
     /// <remarks/>
-    public class Contracts
+    public class Contracts : ISearchResult
     {
         /// <remarks/>
         [XmlElementAttribute("ContractSubset")]

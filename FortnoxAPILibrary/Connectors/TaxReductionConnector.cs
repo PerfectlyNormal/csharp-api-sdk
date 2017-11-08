@@ -98,7 +98,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of tax reductions
 		/// </summary>
 		/// <returns>A list of tax reductions</returns>
-		public TaxReductions Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

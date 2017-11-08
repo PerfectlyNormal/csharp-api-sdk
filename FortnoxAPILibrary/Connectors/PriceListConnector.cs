@@ -44,7 +44,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of price lists
 		/// </summary>
 		/// <returns>A list of price lists</returns>
-		public PriceLists Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

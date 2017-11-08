@@ -165,7 +165,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of offers
 		/// </summary>
 		/// <returns>A list of offers</returns>
-		public Offers Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}

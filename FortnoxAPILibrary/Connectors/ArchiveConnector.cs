@@ -53,11 +53,20 @@ namespace FortnoxAPILibrary.Connectors
 
 		}
 
-		/// <summary>
-		/// Gets at list of Files and Folders
-		/// </summary>
-		/// <returns>A list of Files and Folders</returns>
-		public Folder Find(RootFolder rootFolder = RootFolder.Root)
+        /// <summary>
+        /// Gets at list of Files and Folders
+        /// </summary>
+        /// <returns>A list of Files and Folders</returns>
+        public override IDummyInterface Find()
+        {
+            return Find(RootFolder.Root);
+        }
+
+        /// <summary>
+        /// Gets at list of Files and Folders
+        /// </summary>
+        /// <returns>A list of Files and Folders</returns>
+        public Folder Find(RootFolder rootFolder = RootFolder.Root)
 		{
             this.Parameters = new Dictionary<string, string>();
 

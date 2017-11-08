@@ -54,7 +54,7 @@ namespace FortnoxAPILibrary.Connectors
 		/// Gets a list of article file Connections
 		/// </summary>
 		/// <returns></returns>
-		public ArticleFileConnections Find()
+		public override IDummyInterface Find()
 		{
 			return base.BaseFind();
 		}
