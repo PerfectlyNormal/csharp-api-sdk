@@ -94,7 +94,7 @@ namespace FortnoxAPILibrary
 
         internal E BaseCreate(E entity, Dictionary<string, string> parameters = null)
         {
-            this.Parameters = parameters == null ? new Dictionary<string, string>() : parameters;
+            this.Parameters = parameters ?? new Dictionary<string, string>();
 
             string requestUriString = this.GetUrl();
 
@@ -173,7 +173,7 @@ namespace FortnoxAPILibrary
 
         internal C BaseFind(Dictionary<string, string> parameters = null)
         {
-            this.Parameters = parameters == null ? new Dictionary<string, string>() : parameters;
+            this.Parameters = parameters ?? new Dictionary<string, string>();
 
             this.AddCustomParameters();
 
@@ -186,7 +186,7 @@ namespace FortnoxAPILibrary
 
             if (this.LastModified != DateTime.MinValue)
             {
-                
+
                 this.Parameters.Add("lastmodified", this.LastModified.ToString("yyyy-MM-dd HH:mm:ss"));
             }
 
@@ -261,9 +261,7 @@ namespace FortnoxAPILibrary
                 {
                     var member = value.GetType().GetMember(value.ToString()).FirstOrDefault();
 
-                    var attribute = member.GetCustomAttributes(typeof(RealValueAttribute), true).FirstOrDefault() as RealValueAttribute;
-
-                    if (attribute != null)
+                    if (member.GetCustomAttributes(typeof(RealValueAttribute), true).FirstOrDefault() is RealValueAttribute attribute)
                     {
                         strValue = attribute.RealValue;
                     }
