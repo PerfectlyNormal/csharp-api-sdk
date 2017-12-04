@@ -9,6 +9,10 @@ namespace FortnoxAPILibrary
         DateTime LastModified { get; set; }
         int Page { get; set; }
         int Offset { get; set; }
+
+        bool HasError { get; }
+        FortnoxError.ErrorInformation Error { get; }
+
         IDummyInterface Find();
     }
 }
